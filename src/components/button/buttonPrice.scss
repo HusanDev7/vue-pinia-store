@@ -1,0 +1,18 @@
+.btn-price {
+  padding: 10px;
+  color: dodgerblue;
+  border: solid 2px dodgerblue;
+  border-radius: 10px 20px;
+  cursor: pointer;
+  background: transparent;
+
+  & a {
+    color: dodgerblue;
+  }
+}
+
+.test.active .btn-price {
+  border: 2px #fff solid;
+  background: dodgerblue;
+  color: #fff;
+}

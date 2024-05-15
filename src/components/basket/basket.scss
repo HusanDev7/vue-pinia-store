@@ -1,0 +1,99 @@
+.basket {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: flex-end;
+  opacity: 0;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.7);
+  transition: 0.4s;
+
+  .cards-container {
+    position: relative;
+    overflow-y: auto;
+    height: 420px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    background: dodgerblue;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #fff;
+  }
+
+  &.basketActive {
+    opacity: 1;
+    z-index: 1;
+
+    .basket__saidbare {
+      transform: translateX(0%);
+    }
+  }
+
+  &__saidbare {
+    width: 300px;
+    background: rgba(255, 255, 255);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    transition: 0.5s ease;
+    transform: translateX(100%);
+    z-index: 3;
+
+    .basket__box {
+      display: flex;
+      gap: 100px;
+      position: absolute;
+      bottom: 100px;
+      margin: 0 10px;
+
+      .basket-totall-sum {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+
+    .basket__buy {
+      position: absolute;
+      bottom: 20px;
+      display: flex;
+      margin: 0 10px;
+      gap: 15px;
+
+      &-btn {
+        padding: 10px;
+        background: dodgerblue;
+        border-radius: 10px;
+        color: #fff;
+        cursor: pointer;
+
+        a {
+          font-size: 14px;
+          color: #fff;
+        }
+
+        &-btn:hover {
+          border: solid 2px dodgerblue;
+          color: #000;
+        }
+      }
+    }
+  }
+
+  &-color {
+    color: dodgerblue;
+  }
+
+  &-title {
+    font-size: 26px;
+    margin: 10px;
+  }
+}

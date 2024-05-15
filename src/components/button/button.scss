@@ -1,0 +1,18 @@
+.btn {
+  position: relative;
+  color: dodgerblue;
+  cursor: pointer;
+  width: 50px;
+  background: transparent;
+  height: 50px;
+
+  .shot {
+    position: absolute;
+    padding: 5px;
+    top: 0;
+    right: 0;
+    background: dodgerblue;
+    border-radius: 50%;
+    color: #fff;
+  }
+}

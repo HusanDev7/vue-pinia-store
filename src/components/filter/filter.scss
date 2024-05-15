@@ -1,0 +1,43 @@
+.filter {
+  margin-top: 50px;
+  &-box {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 496px) {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &-select {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      outline: none;
+      padding: 10px 15px;
+      border: solid 2px dodgerblue;
+      border-radius: 10px;
+    }
+
+    &-btn {
+      padding: 10px 25px;
+      font-size: 16px;
+      background: dodgerblue;
+      color: #fff;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    &-inp {
+      border: solid 1px dodgerblue;
+      padding: 5px;
+    }
+  }
+  &-mini {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+}

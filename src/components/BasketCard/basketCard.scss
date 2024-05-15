@@ -1,0 +1,62 @@
+.basket-two {
+  width: 100%;
+  border: solid 2px dodgerblue;
+  border-radius: 10px;
+  margin-top: 20px;
+
+  &-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+  }
+
+  &__product-name {
+    display: flex;
+    align-items: center;
+  }
+
+  &-title {
+    font-size: 12px;
+    font-weight: 400;
+    width: 75px;
+    text-align: center;
+  }
+
+  &-price {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 5px;
+  }
+
+  &-img {
+    height: 70px;
+    width: 70px;
+  }
+
+  .adds {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 0;
+    border-radius: 10px;
+    gap: 10px;
+    width: 100%;
+    max-width: 85px;
+    border: solid 1px dodgerblue;
+
+    &-minus {
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    &-plus {
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    &-item {
+      color: dodgerblue;
+    }
+  }
+}
